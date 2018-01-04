@@ -385,7 +385,7 @@ Create a file containing the encryption key for a SolarEdge inverter.
     -o keyFile      File containing the hex encoded key. (Default: stdout)
                     
 #### Examples
-    python solaredge/semonitor.py -c 12,H239/12,H23a/12,H23b/12,H23c -s 7f101234 -t 2  /dev/ttyUSB0|python solaredge/sekey.py -o 7f101234.key
+    python solaredge/semonitor.py -c 12,H239/12,H23a/12,H23b/12,H23c -s 7f101234 -t 2  /dev/ttyUSB0|python solaredge/utilities/sekey.py -o 7f101234.key
 
 Read the parameters 0x0239-0x023c and write the key value to the file 7f101234.key.
     
