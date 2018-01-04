@@ -3,6 +3,7 @@
 import sys
 import netifaces
 import serial.tools.list_ports
+import serial.tools.list_ports_common
 import re
 import argparse
 from collections import namedtuple
