@@ -7,7 +7,7 @@ import re
 import argparse
 from collections import namedtuple
 import logging
-import se.logutils
+import logutils
 
 logger = logging.getLogger(__name__)
 
@@ -97,8 +97,8 @@ def getArgs():
     level = {                               # previously:
             1: logging.INFO,                # -v    debugFiles
             2: logging.DEBUG,               # -vv   debugMsgs
-            3: se.logutils.LOG_LEVEL_DATA,  # -vvv  debugData
-            4: se.logutils.LOG_LEVEL_RAW,   # -vvvv debugRaw
+            3: logutils.LOG_LEVEL_DATA,  # -vvv  debugData
+            4: logutils.LOG_LEVEL_RAW,   # -vvvv debugRaw
             }.get(min(args.verbose, 4), logging.ERROR)
 
     # configure the root logger
